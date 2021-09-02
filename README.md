@@ -29,6 +29,6 @@ Before going through the code, lets first understand what is concurrency and par
 - Requires multi-core machine
 - Python module : `multiprocessing`
 
-## Versions
+## Required Versions
 - Python 3.9
 - Django 3.2
