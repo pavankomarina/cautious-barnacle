@@ -65,25 +65,33 @@ print(f"\nTotal Time taken using threads : {time.perf_counter() - start} seconds
 
 # Output: 
 '''
+Processing message : message_1
+Message : message_1 processed succesfully!
 Sending message : message_1
 Message : message_1 sent succesfully
+Processing message : message_2      
+Message : message_2 processed succesfully!
 Sending message : message_2
 Message : message_2 sent succesfully
+Processing message : message_3
+Message : message_3 processed succesfully!
 Sending message : message_3
 Message : message_3 sent succesfully
 
-Total Time taken for synchronous execution: 3.004097300000012 seconds!
+Total Time taken for synchronous execution: 12.01493980000032 seconds!
 
-
+Processing message : message_1
+Processing message : message_2
+Processing message : message_3
+Message : message_1 processed succesfully!
+Message : message_2 processed succesfully!
+Message : message_3 processed succesfully!
 Sending message : message_1
 Sending message : message_2
 Sending message : message_3
-
-Current thread count: 4
-
 Message : message_1 sent succesfully
 Message : message_2 sent succesfully
 Message : message_3 sent succesfully
 
-Total Time taken using threads : 1.0074803000002248 seconds!
+Total Time taken using threads : 4.013187300000027 seconds!
 '''
