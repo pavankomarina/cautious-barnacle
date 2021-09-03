@@ -18,8 +18,7 @@ message_list = ["message_1", "message_2", "message_3"]
 start = time.perf_counter()
 for message in message_list:
     send_message(message)
-print(f"\nTotal Time taken for synchronous execution: {time.perf_counter() - start} seconds!")
-print("\n")
+print(f"\nTotal Time taken for synchronous execution: {time.perf_counter() - start} seconds!\n")
 
 # using threads to perform the tasks!
 start = time.perf_counter()
@@ -36,10 +35,10 @@ for message in message_list:
 print(f"\nCurrent thread count: {threading.active_count()}\n")
 
 main_thread = threading.current_thread()
-for t in threading.enumerate():
-    if t is main_thread:
+for _thread in threading.enumerate():
+    if _thread is main_thread:
         continue
-    t.join()
+    _thread.join()
 print(f"\nTotal Time taken using threads : {time.perf_counter() - start} seconds!\n")
 
 
