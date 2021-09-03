@@ -34,5 +34,5 @@ Before going through the code, lets first understand what is concurrency and par
 - Django 3.2
 
 
-# Exmaples
+## Examples
 - Threading examples can be found under `threading_examples` folder
