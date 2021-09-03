@@ -8,6 +8,7 @@ import threading
 # a simple method that sends message to the sender
 def send_message(message: str) -> None:
     print(f"Sending message : {message}")
+    # can be I/O or network bound. delaying by 1 second.
     time.sleep(1)
     print(f"Message : {message} sent succesfully")
 
@@ -23,14 +24,16 @@ print("\n")
 # using threads to perform the tasks!
 start = time.perf_counter()
 
-threads = []  # store all the created threads
 for message in message_list:
     t = threading.Thread(target=send_message, args=(message,))
-    threads.append(t)
     t.start()
 
 # join the threads to main thread so program execution will wait
 # until the threads will finish their tasks!
+
+# print the total active threads
+# MainThread + total spawned threads
+print(f"\nCurrent thread count: {threading.active_count()}\n")
 
 main_thread = threading.current_thread()
 for t in threading.enumerate():
