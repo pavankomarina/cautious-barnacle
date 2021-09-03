@@ -58,6 +58,9 @@ Total Time taken for synchronous execution: 3.004097300000012 seconds!
 Sending message : message_1
 Sending message : message_2
 Sending message : message_3
+
+Current thread count: 4
+
 Message : message_1 sent succesfully
 Message : message_2 sent succesfully
 Message : message_3 sent succesfully
