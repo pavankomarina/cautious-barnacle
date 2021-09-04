@@ -1,3 +1,11 @@
 # MAX_Threads
 #wait() method
-# Lock objects 
+"""
+Lock objects
+Rlock
+acquire()
+release()
+wait()
+
+daemon thread
+"""
