@@ -30,3 +30,17 @@ class ThreadLockDemo:
             self.lock.release()
             pencil_count +=1  # only this method uses pencil_count so no lock required.
 
+c = ThreadLockDemo()
+
+book_thread = threading.Thread(target=c.count_books)
+pencil_thread = threading.Thread(target=c.count_pencils)
+book_thread.start()
+pencil_thread.start()
+book_thread.join()
+pencil_thread.join()
+print('We have total', total_count, 'items.')
+print('We have : ', book_count, 'books.')
+print('We have : ', pencil_count, 'pencils.')
+
+
+
