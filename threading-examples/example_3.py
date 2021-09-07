@@ -44,3 +44,16 @@ print('We have : ', pencil_count, 'pencils.')
 
 
 
+## Output
+"""
+We have total 105755172 items.
+We have :  10000000 books.
+We have :  20000000 pencils.
+"""
+## Output 3
+"""
+
+We have total 120000000 items.
+We have :  10000000 books.    
+We have :  20000000 pencils.
+"""
