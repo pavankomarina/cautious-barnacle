@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-""" Threads that waste CPU cycles """
-
+# This demonstrates the use of multiprocessing in Python
 import os
 import threading
 import multiprocessing as mp
