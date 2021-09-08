@@ -4,12 +4,14 @@ import threading
 import multiprocessing as mp
 
 # a simple function that wastes CPU cycles forever
+
 def cpu_waster():
     while True:
         pass
 
 
 print('Hi! My name is', __name__)
+
 if __name__ == '__main__':
     # display information about this process
     print('\n  Process ID: ', os.getpid())
