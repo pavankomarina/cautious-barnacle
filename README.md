@@ -11,7 +11,7 @@ Before going through the code, lets first understand what is concurrency and par
 - Multiple threads will be spawned to execute the tasks.(Multi-threading)
 - Mainly used for tasks which are IO dependent
 - Can be executed in single core machine
-- Python module : `threading`
+- Python module used : `threading`
 
 ### GIL(Global Interpreter Lock)
 
