@@ -35,4 +35,4 @@ Before going through the code, lets first understand what is concurrency and par
 
 
 ## Examples
-- Threading examples can be found under `threading_examples` folder
+- Threading examples can be found under `threading_examples`
