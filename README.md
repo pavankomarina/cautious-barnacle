@@ -1,5 +1,5 @@
 # Concurrency in Python
-This repository contains working examples of multithreading and multiprocessing libraries in python
+This repository contains working examples of multithreading and multiprocessing libraries in python.
 
 Before going through the code, lets first understand what is concurrency and parallelism
 
